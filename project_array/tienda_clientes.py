@@ -29,7 +29,7 @@ def incluir_nueva_lista():
 def eliminar_cliente(bd_cliente):
     cedula = input("Ingrese la cédula del cliente a eliminar: ")
     for cliente in bd_cliente:
-        if cliente[2] == cedula:  # La cédula está en la posición 2
+        if cliente[2] == cedula:
             bd_cliente.remove(cliente)
             print("Cliente eliminado correctamente.")
             return
